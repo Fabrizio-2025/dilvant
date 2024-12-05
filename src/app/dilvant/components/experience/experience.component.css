@@ -1,0 +1,19 @@
+.unique-experience {
+  background-color: #6d0101;
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .unique-experience {
+    height: 79vh;
+    text-align: justify;
+  }
+}
+
+@media(max-width: 500px) {
+  .unique-experience {
+    height: 50rem;
+  }
+}
+
+

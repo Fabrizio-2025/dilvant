@@ -1,0 +1,32 @@
+<nav class="toolbar bg-color-green flex w-full h-[9vh]">
+  <!-- Logo -->
+  <div class="w-1/2 md:w-1/6 flex items-center justify-center">
+    <div class="logo text-white text-xl font-bold">
+      Dilvant
+    </div>
+  </div>
+
+  <!-- Enlaces de navegación -->
+  <div class="hidden md:flex w-4/6 justify-evenly items-center">
+    <a href="#" class="custom-link text-white hover:underline text-lg">Inicio</a>
+    <a href="#" class="custom-link text-white hover:underline text-lg">Menú</a>
+    <a href="#" class="custom-link text-white hover:underline text-lg">Nosotros</a>
+
+    <!-- Dropdown with Icon -->
+    <div class="dropdown-container relative">
+      <select [(ngModel)]="selectedOption" (change)="onOptionChange($event)" class="dropdown-select">
+        <option value="" selected>Reservas</option>
+        <option *ngFor="let option of dropdownOptions" [value]="option">{{ option }}</option>
+      </select>
+      <i class="bi bi-chevron-down text-white "></i>
+    </div>
+  </div>
+
+
+  <!-- Botón de contacto -->
+  <div class="w-1/2 md:w-1/6 flex justify-center items-center">
+    <button class="bg-yellow-500 px-7 py-3 rounded-3xl text-white text-sm font-medium hover:bg-yellow-600 cursor-pointer">
+      Contacto
+    </button>
+  </div>
+</nav>

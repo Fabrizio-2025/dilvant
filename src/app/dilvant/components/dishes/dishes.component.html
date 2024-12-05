@@ -1,0 +1,22 @@
+<section class="popular-recipes p-8">
+  <!-- Título -->
+  <div class="header flex justify-between items-center mb-6">
+    <h2 class="text-3xl font-bold text-gray-800">Recetas Peruanas Populares</h2>
+    <a href="#" class="text-yellow-600 font-medium hover:underline flex items-center">
+      Explora Todos los Platos →
+    </a>
+  </div>
+
+  <!-- Contenedor de Tarjetas -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+    <div
+      *ngFor="let recipe of recipe"
+      class="h-[50vh]"
+      [style.backgroundImage]="'url(' + recipe.image + ')'"
+    >
+      <div class="flex items-center justify-start p-4 font-semibold text-white text-xl">
+        <h3 class="recipe-title">{{ recipe.title }}</h3>
+      </div>
+    </div>
+  </div>
+</section>

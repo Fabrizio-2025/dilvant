@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~primeicons/primeicons.css';
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+html {
+  background-color: var(--surface-ground);
+}
+
+.poppins {
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
+}
+
+.bg-color-green {
+  background-color: #001405;
+}
+
+div img {
+  width: 100%;
+  height: auto;
+}
